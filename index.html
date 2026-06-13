@@ -2,7 +2,7 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="黑熊老師自然科學數位教材中心網站優化檢核表">
   <title>黑熊老師網站優化檢核表</title>
   <link rel="stylesheet" href="styles.css">
@@ -12,31 +12,61 @@
   <script defer src="app.js"></script>
 </head>
 <body>
-  <header class="hero">
-    <div class="wrap">
-      <p class="eyebrow">🐻 黑熊老師自然科學數位教材中心</p>
-      <h1>網站優化檢核表</h1>
-      <p>完成一項就按一下。紀錄會自動儲存到遠端資料庫。</p>
-    </div>
-  </header>
+  <main class="page-shell">
+    <header class="document-header">
+      <h1>黑熊老師自然科學數位教材中心</h1>
+      <h2>網站優化檢核表</h2>
+      <div class="header-line"></div>
+      <p class="site-line">網站：<a id="siteLink" target="_blank" rel="noopener"></a></p>
+    </header>
 
-  <main class="wrap">
-    <section class="summary" aria-label="完成進度">
+    <section class="meta-table" aria-label="檢核基本資料">
+      <label><span>檢核日期</span><input id="checkDate" type="date"></label>
+      <label><span>檢核人員</span><input id="checker" type="text"></label>
+      <label class="stage-field">
+        <span>版本／階段</span>
+        <select id="stage">
+          <option value="初次檢核">初次檢核</option>
+          <option value="改版複檢">改版複檢</option>
+          <option value="上線驗收">上線驗收</option>
+        </select>
+      </label>
+      <div class="completion-field"><span>整體完成度</span><strong id="overallPercent">0%</strong></div>
+    </section>
+
+    <section class="instructions">
+      <p><strong>使用方式：</strong>依實際狀況選擇「完成／進行中／未完成／不適用」，並在備註欄記錄問題、負責人或預計完成日期。</p>
+      <p>優先處理標示為「高」的項目。</p>
+    </section>
+
+    <section class="sync-panel">
       <div>
         <strong id="progressText">載入中…</strong>
-        <p id="syncStatus">正在連接遠端資料庫</p>
+        <span id="syncStatus">正在連接遠端資料庫</span>
       </div>
-      <div class="progress" aria-hidden="true">
-        <div id="progressBar"></div>
-      </div>
+      <div class="progress"><div id="progressBar"></div></div>
     </section>
 
     <div id="message" class="message hidden" role="alert"></div>
     <div id="checklist"></div>
-  </main>
 
-  <footer>
-    <div class="wrap">完成狀態儲存在 Supabase 遠端資料庫。</div>
-  </footer>
+    <section class="summary-section">
+      <h2>改版驗收總結</h2>
+      <label><span>本次已完成重點</span><textarea id="completedSummary"></textarea></label>
+      <label><span>尚待改善重點</span><textarea id="pendingSummary"></textarea></label>
+      <label><span>下一階段優先工作</span><textarea id="nextSummary"></textarea></label>
+      <div class="summary-bottom">
+        <label><span>預計完成日期</span><input id="targetDate" type="date"></label>
+        <label><span>整體驗收結果</span>
+          <select id="result">
+            <option value="">請選擇</option>
+            <option value="通過">通過</option>
+            <option value="修正後複檢">修正後複檢</option>
+            <option value="尚未通過">尚未通過</option>
+          </select>
+        </label>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

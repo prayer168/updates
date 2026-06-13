@@ -1,9 +1,10 @@
 window.CHECKLIST_DATA = {
-  "checklistKey": "blackbear-science-portal-v1",
-  "title": "黑熊老師自然科學數位教材中心－網站優化檢核表",
+  "checklistKey": "blackbear-science-portal-table-v1",
+  "title": "黑熊老師自然科學數位教材中心｜網站優化檢核表",
+  "siteUrl": "https://prayer168.github.io/science-portal/",
   "sections": [
     {
-      "title": "首頁資訊架構與導覽",
+      "title": "一、首頁資訊架構與導覽",
       "items": [
         {
           "id": "s01-i001",
@@ -80,7 +81,7 @@ window.CHECKLIST_DATA = {
       ]
     },
     {
-      "title": "教材卡片與內容呈現",
+      "title": "二、教材卡片與內容呈現",
       "items": [
         {
           "id": "s02-i001",
@@ -151,7 +152,7 @@ window.CHECKLIST_DATA = {
       ]
     },
     {
-      "title": "閱讀性與視覺設計",
+      "title": "三、閱讀性與視覺設計",
       "items": [
         {
           "id": "s03-i001",
@@ -228,7 +229,7 @@ window.CHECKLIST_DATA = {
       ]
     },
     {
-      "title": "行動裝置與操作體驗",
+      "title": "四、行動裝置與操作體驗",
       "items": [
         {
           "id": "s04-i001",
@@ -293,7 +294,7 @@ window.CHECKLIST_DATA = {
       ]
     },
     {
-      "title": "學習設計與互動內容",
+      "title": "五、學習設計與互動內容",
       "items": [
         {
           "id": "s05-i001",
@@ -364,7 +365,7 @@ window.CHECKLIST_DATA = {
       ]
     },
     {
-      "title": "可新增的內容專區",
+      "title": "六、可新增的內容專區",
       "items": [
         {
           "id": "s06-i001",
@@ -435,7 +436,7 @@ window.CHECKLIST_DATA = {
       ]
     },
     {
-      "title": "教師專區",
+      "title": "七、教師專區",
       "items": [
         {
           "id": "s07-i001",
@@ -488,7 +489,7 @@ window.CHECKLIST_DATA = {
       ]
     },
     {
-      "title": "管理後台與資料維護",
+      "title": "八、管理後台與資料維護",
       "items": [
         {
           "id": "s08-i001",
@@ -541,7 +542,7 @@ window.CHECKLIST_DATA = {
       ]
     },
     {
-      "title": "無障礙、效能與搜尋能見度",
+      "title": "九、無障礙、效能與搜尋能見度",
       "items": [
         {
           "id": "s09-i001",
@@ -606,7 +607,7 @@ window.CHECKLIST_DATA = {
       ]
     },
     {
-      "title": "分階段執行與驗收",
+      "title": "十、分階段執行與驗收",
       "items": [
         {
           "id": "s10-i001",
