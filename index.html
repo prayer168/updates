@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="黑熊老師自然科學數位教材中心網站優化檢核表">
-  <title>黑熊老師網站優化檢核表</title>
+  <title>黑熊老師自然科學數位教材中心｜網站優化檢核表</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="config.js"></script>
@@ -20,22 +20,8 @@
       <p class="site-line">網站：<a id="siteLink" target="_blank" rel="noopener"></a></p>
     </header>
 
-    <section class="meta-table" aria-label="檢核基本資料">
-      <label><span>檢核日期</span><input id="checkDate" type="date"></label>
-      <label><span>檢核人員</span><input id="checker" type="text"></label>
-      <label class="stage-field">
-        <span>版本／階段</span>
-        <select id="stage">
-          <option value="初次檢核">初次檢核</option>
-          <option value="改版複檢">改版複檢</option>
-          <option value="上線驗收">上線驗收</option>
-        </select>
-      </label>
-      <div class="completion-field"><span>整體完成度</span><strong id="overallPercent">0%</strong></div>
-    </section>
-
     <section class="instructions">
-      <p><strong>使用方式：</strong>依實際狀況選擇「完成／進行中／未完成／不適用」，並在備註欄記錄問題、負責人或預計完成日期。</p>
+      <p id="instructionText"></p>
       <p>優先處理標示為「高」的項目。</p>
     </section>
 

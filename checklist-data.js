@@ -1,7 +1,8 @@
 window.CHECKLIST_DATA = {
-  "checklistKey": "blackbear-science-portal-table-v1",
+  "checklistKey": "blackbear-science-portal-final-v1",
   "title": "黑熊老師自然科學數位教材中心｜網站優化檢核表",
   "siteUrl": "https://prayer168.github.io/science-portal/",
+  "instructions": "使用方式：依實際狀況勾選「完成／進行中／未完成／不適用」，並在備註欄記錄問題、或預計完成日期。",
   "sections": [
     {
       "title": "一、首頁資訊架構與導覽",
