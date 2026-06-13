@@ -68,3 +68,5 @@ font-weight:900;color:transparent}
   .summary-bottom label:first-child{border-right:0;border-bottom:1px solid var(--line)}
 }
 @media(max-width:520px){.page-shell{width:100%;margin:0;padding:12px}}
+
+.status-btn{cursor:pointer;touch-action:manipulation}.status-btn:hover{background:#e8f1eb}.status-btn.active:hover{background:var(--green)}.status-btn:focus-visible{outline:3px solid #f3b83f;outline-offset:2px}

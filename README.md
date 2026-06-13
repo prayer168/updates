@@ -11,3 +11,9 @@
 1. 在 Supabase SQL Editor 執行 `supabase.sql`
 2. 將原本有效的 Project URL 與 Publishable key 填入 `config.js`
 3. 將所有檔案上傳 GitHub Pages
+
+
+## 本次修正
+- 狀態按鈕按下後立即切換，不再等待 Supabase 回應。
+- 遠端連線失敗時先保存於瀏覽器 localStorage。
+- Supabase 恢復連線後，後續操作會繼續同步。
